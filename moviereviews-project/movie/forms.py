@@ -15,16 +15,16 @@ class ReviewForm(ModelForm):
         )
 
 
-class Meta:
+    class Meta:
 
-    model = Review
+        model = Review
 
-    fields = ['text', 'watchAgain']
+        fields = ['text', 'watchAgain']
 
-    labels = {
-        'watchAgain': ('Watch Again'),
-    }
+        labels = {
+            'watchAgain': ('Watch Again'),
+        }
 
-    widgets = {
-        'text': Textarea(attrs={'rows': 4}),
-    }
+        widgets = {
+            'text': Textarea(attrs={'rows': 4}),
+        }
